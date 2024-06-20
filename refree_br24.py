@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-arbitros = pd.ExcelFile('D:/pythonProject/Relatorio_Jogo/data/raw/arbitros_br24.xlsx')
+arbitros = pd.ExcelFile('arbitros_br24.xlsx')
 abas = arbitros.sheet_names
 # Criar um DataFrame para cada aba
 dfs = {aba: pd.read_excel(arbitros, sheet_name=aba) for aba in abas}
